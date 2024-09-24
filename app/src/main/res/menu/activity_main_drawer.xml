@@ -10,7 +10,7 @@
             android:title="@string/menu_home" />
         <item
             android:id="@+id/nav_perfil"
-            android:title="Perfil" />
+            android:title="@string/menu_perfil" />
         <item
             android:id="@+id/nav_gallery"
             android:title="@string/menu_gallery" />
@@ -19,15 +19,7 @@
             android:title="@string/menu_videos" />
         <item
             android:id="@+id/nav_contacto"
-            android:title="Contacto" />
+            android:title="@string/menu_contacto" />
     </group>
 
-    <group android:checkableBehavior="single">
-        <item
-            android:id="@+id/nav_config"
-            android:title="Configuración" />
-        <item
-            android:id="@+id/nav_calificacion"
-            android:title="Calificanos" />
-    </group>
 </menu>

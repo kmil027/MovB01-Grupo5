@@ -12,6 +12,12 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
+        android:id="@+id/nav_perfil"
+        android:name="poli.MovB01Grupo5.proyectoportafoliopersonal.ui.perfil.PerfilFragment"
+        android:label="@string/menu_perfil"
+        tools:layout="@layout/fragment_perfil" />
+
+    <fragment
         android:id="@+id/nav_gallery"
         android:name="poli.MovB01Grupo5.proyectoportafoliopersonal.ui.gallery.GalleryFragment"
         android:label="@string/menu_gallery"
@@ -22,4 +28,10 @@
         android:name="poli.MovB01Grupo5.proyectoportafoliopersonal.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_videos"
         tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_contacto"
+        android:name="poli.MovB01Grupo5.proyectoportafoliopersonal.ui.contacto.ContactoFragment"
+        android:label="@string/menu_contacto"
+        tools:layout="@layout/fragment_contacto" />
 </navigation>
