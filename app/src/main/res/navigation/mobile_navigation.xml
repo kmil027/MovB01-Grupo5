@@ -18,8 +18,8 @@
         tools:layout="@layout/fragment_gallery" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
+        android:id="@+id/nav_videos"
         android:name="poli.MovB01Grupo5.proyectoportafoliopersonal.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
+        android:label="@string/menu_videos"
         tools:layout="@layout/fragment_slideshow" />
 </navigation>
