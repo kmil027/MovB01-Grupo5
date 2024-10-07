@@ -7,7 +7,7 @@ import androidx.lifecycle.ViewModel
 class ContactoViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is Contacto Fragment"
+        value = "Contáctame"
     }
     val text: LiveData<String> = _text
 }
