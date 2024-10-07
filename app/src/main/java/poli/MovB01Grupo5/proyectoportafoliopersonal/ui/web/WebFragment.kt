@@ -35,7 +35,7 @@ class WebFragment : Fragment() {
         val urlView = root.findViewById<EditText>(R.id.urlToView)
         val webBtn = root.findViewById<Button>(R.id.webBtn)
         val webView = root.findViewById<WebView>(R.id.webView)
-        webView.settings.javaScriptEnabled = true
+
         webView.webViewClient = object : WebViewClient() {
            override fun shouldOverrideUrlLoading(view: WebView?, url: String?): Boolean {
                 if (url != null) {
@@ -44,6 +44,7 @@ class WebFragment : Fragment() {
                 return true
             }
         }
+        webView.settings.javaScriptEnabled = true
 
         webBtn.setOnClickListener {
             val url = urlView.text.toString()
