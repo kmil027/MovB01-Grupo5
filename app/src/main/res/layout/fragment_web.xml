@@ -24,7 +24,7 @@
                 android:layout_weight="3"
                 android:ems="10"
                 android:inputType="text"
-                android:text="Ingresa tu URL:" />
+                android:hint="Ingresa tu URL:" />
 
             <Button
                 android:id="@+id/webBtn"

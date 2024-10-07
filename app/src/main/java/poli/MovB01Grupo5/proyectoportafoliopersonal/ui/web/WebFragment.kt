@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.webkit.WebView
+import android.webkit.WebViewClient
 import android.widget.Button
 import android.widget.EditText
 import poli.MovB01Grupo5.proyectoportafoliopersonal.R
@@ -34,6 +35,15 @@ class WebFragment : Fragment() {
         val urlView = root.findViewById<EditText>(R.id.urlToView)
         val webBtn = root.findViewById<Button>(R.id.webBtn)
         val webView = root.findViewById<WebView>(R.id.webView)
+        webView.settings.javaScriptEnabled = true
+        webView.webViewClient = object : WebViewClient() {
+           override fun shouldOverrideUrlLoading(view: WebView?, url: String?): Boolean {
+                if (url != null) {
+                    view?.loadUrl(url)
+                }
+                return true
+            }
+        }
 
         webBtn.setOnClickListener {
             val url = urlView.text.toString()
