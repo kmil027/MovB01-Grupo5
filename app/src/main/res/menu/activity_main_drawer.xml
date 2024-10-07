@@ -20,6 +20,9 @@
         <item
             android:id="@+id/nav_contacto"
             android:title="@string/menu_contacto" />
+        <item
+            android:id="@+id/webFragment"
+            android:title="@string/menu_web" />
     </group>
 
 </menu>
