@@ -1,328 +1,275 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15sp"
     tools:context=".ui.perfil.PerfilFragment">
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="130dp"
-        android:layout_height="119dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="4dp"
-        android:src="@drawable/fotografo"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="96dp"
-        android:text="FEDERICO"
-        android:textSize="36sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:text="RIOS ESCOBAR"
-        android:textColor="@color/teal_700"
-        android:textSize="36sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="200dp"
-        android:text="Fotografo"
-        android:textStyle="bold"
-        android:textSize="16sp"
-
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
-
     <ScrollView
-        android:id="@+id/scrollView2"
         android:layout_width="match_parent"
-        android:layout_height="1300dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8">
+        android:layout_height="match_parent">
 
-
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            tools:layout_editor_absoluteX="-1dp"
-            tools:layout_editor_absoluteY="154dp">
+            android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textView9"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
-                android:text="Perfil"
-                android:textSize="32sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:orientation="horizontal"
+                android:paddingBottom="40dp">
 
-            <View
-                android:layout_width="150dp"
-                android:layout_height="3dp"
-                android:background="#0000FF"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView9" />
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/fotografo" />
 
-            <TextView
-                android:id="@+id/textView13"
-                android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ricardo Rios"
+                        android:textAlignment="center"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fotografo"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="208dp"
-                android:text="Experiencia laboral"
-                android:textSize="32sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:layout_weight="3"
+                android:orientation="horizontal">
 
-            <View
-                android:layout_width="250dp"
-                android:layout_height="3dp"
-                android:layout_marginTop="4dp"
-                android:background="#0000FF"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView13" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingRight="5dp">
 
-            <TextView
-                android:id="@+id/exptextTitle"
-                android:layout_width="220dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="208dp"
-                android:layout_marginTop="52dp"
-                android:text="Más de 10 años de experiencia como fotoperiodista. Su trabajo se presenta regularmente en medios internaciones y publicaciones"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="Perfil"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/exptext2"
-                android:layout_width="220dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="208dp"
-                android:layout_marginTop="180dp"
-                android:text="2012 Publico el libro de fotos. &quot;El camino del cóndor&quot;"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-            <TextView
-                android:id="@+id/exptext3"
-                android:layout_width="220dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="208dp"
-                android:layout_marginTop="236dp"
-                android:text="2013 Publica el libro &quot;Fiestas de San Pacho Quibdo.&quot;"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="#0000FF" />
 
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Federico es un fotografo documental colombiano que se centra en temas sociales en america latina"
+                        android:textSize="18sp" />
 
-            <TextView
-                android:id="@+id/exptext4"
-                android:layout_width="220dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="212dp"
-                android:layout_marginTop="296dp"
-                android:text="2014 Fotografía Violencia y Sociedad en América Latina"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                    <TextView
+                        android:id="@+id/exptextTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Más de 10 años de experiencia como fotoperiodista. Su trabajo se presenta regularmente en medios internaciones y publicaciones"
+                        android:textSize="18sp" />
 
-            <TextView
-                android:id="@+id/exptext5"
-                android:layout_width="220dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="212dp"
-                android:layout_marginTop="348dp"
-                android:text="Ha participado en exposiciones de arte y fotografia en São Paulo, Nueva York, Lituania, Amsterdam y recientemente en el museo de Antioquia.
-"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="Contacto"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/exptext6"
-                android:layout_width="220dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="212dp"
-                android:layout_marginTop="480dp"
-                android:text="Su trabajo se presenta regularmente en medios y publicaciones internacionales como The New York Times, Stern, Times Magazine, Parismatch, Leica Magazine, El País España, Folha de São Paulo y Vanity Fair, entre otros."
-                android:textSize="16sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="#0000FF" />
 
+                    <TextView
+                        android:id="@+id/contacto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="- (57+) 1234-5678\n - correo@example.com \n - Calle 12 # 34 - 56, Sitio "
+                        android:textSize="18sp" />
 
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="Habilidades"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
 
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="#0000FF" />
 
+                    <TextView
+                        android:id="@+id/habilidades"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="- Liderazgo \n- Disponibilidad para viajes \n- Predisposición para trabajo en equipo"
+                        android:textSize="18sp" />
 
-            <TextView
-                android:id="@+id/textView10"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="52dp"
-                android:text="Contacto"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView15" />
+                    <TextView
+                        android:id="@+id/idiomastitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="Idiomas"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
 
-            <View
-                android:layout_width="150dp"
-                android:layout_height="3dp"
-                android:layout_marginTop="16dp"
-                android:background="#0000FF"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView10" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="#0000FF" />
 
-            <TextView
-                android:id="@+id/contacto"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
-                android:layout_marginTop="28dp"
-                android:text="- (57+) 1234-5678\n - correo@example.com \n - Calle 12 # 34 - 56, Sitio "
-                android:textSize="20sp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView10" />
+                    <TextView
+                        android:id="@+id/idiomas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="- Ingles \n- Portugues"
+                        android:textSize="18sp" />
 
-            <TextView
-                android:id="@+id/textView15"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="36dp"
-                android:text="Federico es un fotografo documental colombiano que se centra en temas sociales en america latina"
-                android:textSize="24sp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView9" />
+                    <TextView
+                        android:id="@+id/otros"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
 
-            <TextView
-                android:id="@+id/textView11"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
-                android:layout_marginTop="28dp"
-                android:text="Habilidades"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/contacto" />
+                        android:text="Otros intereses"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
 
-            <View
-                android:layout_width="150dp"
-                android:layout_height="3dp"
-                android:layout_marginTop="20dp"
-                android:background="#0000FF"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView11" />
-            <TextView
-                android:id="@+id/habilidades"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
-                android:layout_marginTop="28dp"
-                android:text="- Liderazgo \n
-- Disponibilidad para viajes \n
-- Predisposición para trabajo en equipo \n"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView11" />
-            <TextView
-                android:id="@+id/idiomastitle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
-                android:layout_marginTop="28dp"
-                android:text="Idiomas"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/habilidades" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="#0000FF" />
 
-            <View
-                android:layout_width="150dp"
-                android:layout_height="3dp"
-                android:layout_marginTop="20dp"
-                android:background="#0000FF"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/idiomastitle" />
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="- Música \n- Deportes náuticos \n- Lectura"
+                        android:textSize="18sp"
 
-            <TextView
-                android:id="@+id/idiomas"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="264dp"
-                android:text="- Ingles \n
-- Portugues \n"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/idiomastitle" />
-            <TextView
-                android:id="@+id/otros"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="48dp"
-                android:layout_marginEnd="68dp"
-                android:text="Otros intereses"
-                android:textSize="24sp"
+                        />
 
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/exptext6" />
-            <View
-                android:layout_width="250dp"
-                android:layout_height="3dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="0dp"
-                android:background="#0000FF"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/otros" />
+                </LinearLayout>
 
-            <TextView
-                android:id="@+id/textView14"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="60dp"
-                android:layout_marginEnd="16dp"
-                android:text="- Música \n
-- Deportes náuticos \n
--Lectura \n"
-                android:textSize="24sp"
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp">
 
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/otros" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="Experiencia laboral"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="#0000FF" />
+
+                    <TextView
+                        android:id="@+id/exptext2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:text="2012 Publico el libro de fotos. &quot;El camino del cóndor&quot;"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/exptext3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:text="2013 Publica el libro &quot;Fiestas de San Pacho Quibdo.&quot;"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/exptext4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:text="2014 Fotografía Violencia y Sociedad en América Latina"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/exptext5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:text="Ha participado en exposiciones de arte y fotografia en São Paulo, Nueva York, Lituania, Amsterdam y recientemente en el museo de Antioquia.
+        "
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/exptext6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:text="Su trabajo se presenta regularmente en medios y publicaciones internacionales como The New York Times, Stern, Times Magazine, Parismatch, Leica Magazine, El País España, Folha de São Paulo y Vanity Fair, entre otros."
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
     </ScrollView>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
